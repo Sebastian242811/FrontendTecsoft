@@ -1,0 +1,314 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "Antezana",
+      "username": "Anteza20",
+      "number": "999999999",
+      "email": "antezana20@hotmail.com",
+      "password": "antezana20",
+      "ruc": "123456789423",
+      "description": "somos una empresa de trasnporte reconocida a nivel nacional"
+    },
+    {
+      "id": 2,
+      "name": "Molina",
+      "username": "Molina20",
+      "number": "987654321",
+      "email": "molina20@hotmail.com",
+      "password": "molina20",
+      "ruc": "123456789321",
+      "description": "Molina una empresa de transporte que hace cargas y llevamos pasajeros a nivel provincial"
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "name": "Lima"
+    },
+    {
+      "id": 2,
+      "name": "Ayacucho"
+    },
+    {
+      "id": 3,
+      "name": "Cuzco"
+    },
+    {
+      "id": 4,
+      "name": "Abancay"
+    }
+  ],
+  "terminals": [
+    {
+      "id": 1,
+      "name": "string",
+      "adress": "string",
+      "city": {
+        "id": 1,
+        "name": "Lima"
+      },
+      "company": {
+        "id": 1,
+        "name": "string",
+        "username": "string",
+        "number": "string",
+        "email": "string",
+        "password": "string",
+        "ruc": "string",
+        "description": "string"
+      }
+    },
+    {
+      "id": 2,
+      "name": "string",
+      "adress": "Jr. Herman",
+      "city": {
+        "id": 2,
+        "name": "Ayacucho"
+      },
+      "company": {
+        "id": 1,
+        "name": "string",
+        "username": "string",
+        "number": "string",
+        "email": "string",
+        "password": "string",
+        "ruc": "string",
+        "description": "string"
+      }
+    },
+    {
+      "id": 3,
+      "name": "string",
+      "adress": "Jr. Luis",
+      "city": {
+        "id": 3,
+        "name": "Cuzco"
+      },
+      "company": {
+        "id": 1,
+        "name": "string",
+        "username": "string",
+        "number": "string",
+        "email": "string",
+        "password": "string",
+        "ruc": "string",
+        "description": "string"
+      }
+    },
+    {
+      "id": 4,
+      "name": "string",
+      "adress": "Jr. Abancay",
+      "city": {
+        "id": 4,
+        "name": "Abancay"
+      },
+      "company": {
+        "id": 1,
+        "name": "string",
+        "username": "string",
+        "number": "string",
+        "email": "string",
+        "password": "string",
+        "ruc": "string",
+        "description": "string"
+      }
+    }
+  ],
+  "shipTerminals": [
+    [
+      {
+        "terminalOrigin": {
+          "id": 1,
+          "name": "string",
+          "adress": "string",
+          "city": null,
+          "company": null
+        },
+        "terminalOriginId": 1,
+        "terminalDestiny": {
+          "id": 2,
+          "name": "string",
+          "adress": "Jr. Herman",
+          "city": null,
+          "company": null
+        },
+        "terminalDestinyId": 2,
+        "price": 0
+      },
+      {
+        "terminalOrigin": {
+          "id": 1,
+          "name": "string",
+          "adress": "string",
+          "city": null,
+          "company": null
+        },
+        "terminalOriginId": 1,
+        "terminalDestiny": {
+          "id": 3,
+          "name": "string",
+          "adress": "Jr. Luis",
+          "city": null,
+          "company": null
+        },
+        "terminalDestinyId": 3,
+        "price": 0
+      },
+      {
+        "terminalOrigin": {
+          "id": 1,
+          "name": "string",
+          "adress": "string",
+          "city": null,
+          "company": null
+        },
+        "terminalOriginId": 1,
+        "terminalDestiny": {
+          "id": 4,
+          "name": "string",
+          "adress": "Jr. Abancay",
+          "city": null,
+          "company": null
+        },
+        "terminalDestinyId": 4,
+        "price": 0
+      },
+      {
+        "terminalOrigin": {
+          "id": 2,
+          "name": "string",
+          "adress": "Jr. Herman",
+          "city": null,
+          "company": null
+        },
+        "terminalOriginId": 2,
+        "terminalDestiny": {
+          "id": 4,
+          "name": "string",
+          "adress": "Jr. Abancay",
+          "city": null,
+          "company": null
+        },
+        "terminalDestinyId": 4,
+        "price": 0
+      },
+      {
+        "terminalOrigin": {
+          "id": 2,
+          "name": "string",
+          "adress": "Jr. Herman",
+          "city": null,
+          "company": null
+        },
+        "terminalOriginId": 2,
+        "terminalDestiny": {
+          "id": 3,
+          "name": "string",
+          "adress": "Jr. Luis",
+          "city": null,
+          "company": null
+        },
+        "terminalDestinyId": 3,
+        "price": 0
+      },
+      {
+        "terminalOrigin": {
+          "id": 2,
+          "name": "string",
+          "adress": "Jr. Herman",
+          "city": null,
+          "company": null
+        },
+        "terminalOriginId": 2,
+        "terminalDestiny": {
+          "id": 1,
+          "name": "string",
+          "adress": "string",
+          "city": null,
+          "company": null
+        },
+        "terminalDestinyId": 1,
+        "price": 0
+      },
+      {
+        "terminalOrigin": {
+          "id": 3,
+          "name": "string",
+          "adress": "Jr. Luis",
+          "city": null,
+          "company": null
+        },
+        "terminalOriginId": 3,
+        "terminalDestiny": {
+          "id": 1,
+          "name": "string",
+          "adress": "string",
+          "city": null,
+          "company": null
+        },
+        "terminalDestinyId": 1,
+        "price": 0
+      },
+      {
+        "terminalOrigin": {
+          "id": 3,
+          "name": "string",
+          "adress": "Jr. Luis",
+          "city": null,
+          "company": null
+        },
+        "terminalOriginId": 3,
+        "terminalDestiny": {
+          "id": 4,
+          "name": "string",
+          "adress": "Jr. Abancay",
+          "city": null,
+          "company": null
+        },
+        "terminalDestinyId": 4,
+        "price": 0
+      },
+      {
+        "terminalOrigin": {
+          "id": 4,
+          "name": "string",
+          "adress": "Jr. Abancay",
+          "city": null,
+          "company": null
+        },
+        "terminalOriginId": 4,
+        "terminalDestiny": {
+          "id": 1,
+          "name": "string",
+          "adress": "string",
+          "city": null,
+          "company": null
+        },
+        "terminalDestinyId": 1,
+        "price": 0
+      },
+      {
+        "terminalOrigin": {
+          "id": 4,
+          "name": "string",
+          "adress": "Jr. Abancay",
+          "city": null,
+          "company": null
+        },
+        "terminalOriginId": 4,
+        "terminalDestiny": {
+          "id": 2,
+          "name": "string",
+          "adress": "Jr. Herman",
+          "city": null,
+          "company": null
+        },
+        "terminalDestinyId": 2,
+        "price": 0
+      }
+    ]
+  ]
+}
