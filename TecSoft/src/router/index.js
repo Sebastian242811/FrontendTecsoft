@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../views/Login.vue'
+import HomeCustomer from '../views/HomeCustomerPrincipal'
 
 Vue.use(VueRouter)
 
@@ -11,22 +12,44 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/home/dealer/:id',
+    name: 'HomeDealer',
+    component: () => import('../views/HomeDealer')
+  },
+  ////////////////////////////////////////////////////////////
+  // Customer
+  ////////////////////////////////////////////////////////////
+  {
+    path: '/home/customer',
+    name: 'HomeCustomer',
+    component: () => import('../views/HomeCustomer'),
+    children:[
+      {
+        path: '',
+        name: 'HomeCustomerPrincipal',
+        component: HomeCustomer
+      },
+      {
+        path: 'findCompany',
+        name: 'FindCompany',
+        component: () => import('../components/FindCompanies')
+      },
+      {
+        path: 'about',
+        name: 'CustomerAbout',
+        component: () => import('../views/About')
+      },
+      {
+        path: '/companies/:id',
+        name: 'ShipTerminal',
+        component:  () => import('../components/ShipTerminal')
+      }
+    ]
   },
   {
-    path: '/companies',
-    name: 'FindCompany',
-    component: () => import('../components/FindCompanies')
-  },
-  {
-    path: '/companies/:id',
-    name: 'ShipTerminal',
-    component:  () => import('../components/ShipTerminal')
+    path: '/home/company/:id',
+    name: 'HomeCompany',
+    component: () => import('../views/HomeCompany')
   }
 ]
 
