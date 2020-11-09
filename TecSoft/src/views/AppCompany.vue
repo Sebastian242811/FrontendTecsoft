@@ -1,10 +1,10 @@
 <template>
-  <h1>Hola</h1>
+  <h1>Company</h1>
 </template>
 
 <script>
 export default {
-name: "HomeCustomerPrincipal"
+name: "AppCompany"
 }
 </script>
 

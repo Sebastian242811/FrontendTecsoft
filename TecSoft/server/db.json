@@ -310,5 +310,92 @@
         "price": 0
       }
     ]
+  ],
+  "packages": [
+    {
+      "description": "Es una Lavadora",
+      "observations": "Es muy delicada",
+      "priority": 1,
+      "state": 1,
+      "weight": "string",
+      "discount": 0,
+      "ferightId": 0,
+      "dispatcherId": 0,
+      "customerId": 0,
+      "shipTerminalId": 0
+    }
+  ],
+  "dealers": [
+    {
+      "id": 1,
+      "name": "Simon",
+      "cityId": 1,
+      "city": {
+        "id": 1,
+        "name": "Lima"
+      }
+    }
+  ],
+  "deliveries": [
+    {
+      "id": 1,
+      "dealerId": 1,
+      "dealer": {
+        "id": 1,
+        "name": "Simon",
+        "cityId": 1,
+        "city": {
+          "id": 1,
+          "name": "Lima"
+        }
+      }
+    }
+  ],
+  "deliveryPackages": [
+    {
+      "packageId": 1,
+      "package": {
+        "description": "Es una Lavadora",
+        "observations": "Es muy delicada",
+        "priority": 1,
+        "state": 1,
+        "weight": "string",
+        "discount": 0,
+        "ferightId": 0,
+        "dispatcherId": 0,
+        "customerId": 0,
+        "shipTerminalId": 0
+      },
+      "deliveryCompanyId": 1,
+      "deliveryCompany": {
+        "id": 1,
+        "dealerId": 1,
+        "dealer": {
+          "id": 1,
+          "name": "Simon",
+          "cityId": 1,
+          "city": {
+            "id": 1,
+            "name": "Lima"
+          }
+        }
+      },
+      "priceCompany": 2,
+      "deliveryHouseId": 1,
+      "deliveryHouse": {
+        "id": 2,
+        "dealerId": 1,
+        "dealer": {
+          "id": 2,
+          "name": "Ramon",
+          "cityId": 2,
+          "city": {
+            "id": 2,
+            "name": "Ayacucho"
+          }
+        }
+      },
+      "priceHouse": 2
+    }
   ]
 }

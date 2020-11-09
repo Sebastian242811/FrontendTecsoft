@@ -1,33 +1,44 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Login.vue'
-import HomeCustomer from '../views/HomeCustomerPrincipal'
+import Login from '../views/Login.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'Login',
+    component: Login
   },
   {
-    path: '/home/dealer/:id',
-    name: 'HomeDealer',
-    component: () => import('../views/HomeDealer')
+    path: '/dealer',
+    name: 'AppDealer',
+    component: () => import('../views/AppDealer'),
+    children: [
+      {
+        path: 'home',
+        name: 'HomeDealerPrincipal',
+        component: () => import('../views/HomeDealer')
+      },
+      {
+        path: 'delivery',
+        name: 'Delivery',
+        component: () => import('../components/Delivery')
+      }
+    ]
   },
   ////////////////////////////////////////////////////////////
   // Customer
   ////////////////////////////////////////////////////////////
   {
-    path: '/home/customer',
-    name: 'HomeCustomer',
-    component: () => import('../views/HomeCustomer'),
+    path: '/customer',
+    name: 'AppCustomer',
+    component: () => import('../views/AppCustomer'),
     children:[
       {
-        path: '',
+        path: 'home',
         name: 'HomeCustomerPrincipal',
-        component: HomeCustomer
+        component: () => import('../views/HomeCustomer')
       },
       {
         path: 'findCompany',
@@ -40,16 +51,17 @@ const routes = [
         component: () => import('../views/About')
       },
       {
-        path: '/companies/:id',
-        name: 'ShipTerminal',
-        component:  () => import('../components/ShipTerminal')
+        path: 'state',
+        name: 'StatePackage',
+        component: () => import('../components/PackageState')
       }
     ]
   },
+
   {
-    path: '/home/company/:id',
+    path: '/company/:id',
     name: 'HomeCompany',
-    component: () => import('../views/HomeCompany')
+    component: () => import('../views/AppCompany')
   }
 ]
 

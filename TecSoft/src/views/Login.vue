@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Login',
   components: {
   },
   methods:{
@@ -23,10 +23,10 @@ export default {
       this.$router.push({ name: 'HomeCustomerPrincipal', params: {id:id} });
     },
     navigateToHomeDealer(id){
-      this.$router.push({ name: 'HomeDealer', params: {id:id}});
+      this.$router.push({ name: 'AppDealer', params: {id:id}});
     },
     navigateToHomeCompany(id){
-      this.$router.push({ name: 'HomeCompany', params: {id:id} });
+      this.$router.push({ name: 'AppCompany', params: {id:id} });
     }
 
   }

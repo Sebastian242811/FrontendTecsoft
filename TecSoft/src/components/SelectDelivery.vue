@@ -1,6 +1,5 @@
 <template>
   <v-card>
-    <h1>Hola</h1>
   </v-card>
 </template>
 

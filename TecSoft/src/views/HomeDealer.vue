@@ -1,7 +1,5 @@
 <template>
-  <v-card>
-    <h1>Hola Dealer</h1>
-  </v-card>
+  <h1>Hola Dealer</h1>
 </template>
 
 <script>
