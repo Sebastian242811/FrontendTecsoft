@@ -2,7 +2,10 @@ import http from './http-common'
 
 class DispatchersService{
     getAll(){
-        return http.get('/Dispatchers')
+        return http.get('/dispatchers')
+    }
+    get(id){
+        return http.get(`/dispatchers/${id}`)
     }
 }
 

@@ -2,10 +2,10 @@ import http from "./http-common"
 
 class CompaniesService {
     getAll() {
-        return http.get('/Company');
+        return http.get('/companies');
     }
     get(id) {
-        return http.get(`/Company/${id}`)
+        return http.get(`/companies/${id}`)
     }
 
 }
